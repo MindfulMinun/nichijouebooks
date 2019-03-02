@@ -7,17 +7,22 @@
   "author": "MindfulMinun <importantmails4bc@gmail.com>",
   "license": "MIT",
   "private": true,
+  "engines": {
+    "node": "8.11.1"
+  },
   "scripts": {
     "build": "babel src -d dist",
     "watch": "nodemon --watch src --exec 'babel src -d dist'",
     "start": "node dist/main.js"
   },
   "dependencies": {
-    "markov-strings": "^2.0.2"
+    "markov-strings": "^2.0.2",
+    "twit": "^2.2.11"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "dotenv": "^6.2.0",
     "nodemon": "^1.18.9"
   }
 }
