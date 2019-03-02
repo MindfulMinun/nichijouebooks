@@ -1,0 +1,23 @@
+{
+  "name": "nichijouebooks",
+  "version": "0.1.0",
+  "description": "Twitter for Shinonome Nano",
+  "main": "dist/main.js",
+  "repository": "https://github.com/MindfulMinun/nichijouebooks",
+  "author": "MindfulMinun <importantmails4bc@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "babel src -d dist",
+    "watch": "nodemon --watch src --exec 'babel src -d dist'",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "markov-strings": "^2.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.18.9"
+  }
+}
