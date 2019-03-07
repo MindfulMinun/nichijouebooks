@@ -7,7 +7,8 @@ import Markov from 'markov-strings'
 import SelamatPagi from './NichijouDict.js'
 
 // "If not in production, load dotenv"
-if (!/production/i.test(process.env.NODE_ENV || '')) {
+const production = /production/i.test(typeof process.env.NODE_ENV === 'string' ? process.env.NODE_ENV || '')
+if (!production) {
     require('dotenv').config()
 }
 
@@ -38,11 +39,14 @@ const NanoOptions = {
 
 // Generate a sentence and send it to Twitter.
 let phrase = Nano.generate(NanoOptions)
-Crow.post('statuses/update', { status: phrase.string })
-    .then(function (resp) {
-        console.log('Tweet sent successfully.', phrase)
-    })
-    .catch(function (err) {
-        console.log('Something happened, couldn’t post tweet.')
-        console.log(err)
-    })
+
+if (production) {
+    Crow.post('statuses/update', { status: phrase.string })
+        .then(resp => {
+            console.log('Tweeted successfully.', phrase)
+        })
+        .catch(err => {
+            console.log('Something happened, couldn’t post tweet.')
+            console.log(err)
+        })
+}

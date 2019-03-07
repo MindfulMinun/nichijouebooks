@@ -35,8 +35,6 @@ const LikeLove = [
     "Hey. You want to run?",
     // LL5:
     "I hope I get accepted to Tokisadame High School.",
-    "I hope the person above gets accepted.",
-    "I hope the person to the right gets accepted.",
     "I hope the person below gets accepted!! You can do it!",
     // LL10:
     "Cold attack!"
@@ -55,14 +53,22 @@ const HelveticaStandard = [
     "If I ever tell, I’ll give you one million yen."
 ]
 
-const Ep25 = [
+const Random = [
+    // Part 71
+    "My glasses... My glasses..."
+    // Part 96
+    "Boil me or fry me! Do whatever you want with me!",
+    // Part 98
+    "I think you’re a little too young for these!",
     // Part 106
-    "If we show up late together, people will get the wrong idea."
+    "If we show up late together, people will get the wrong idea.",
+    // Idk
+    "Jan, ken, pon!",
 ]
 
 data.push(...ShortThoughts)
 data.push(...LikeLove)
 data.push(...HelveticaStandard)
-data.push(...Ep25)
+data.push(...Random)
 
 export default data
