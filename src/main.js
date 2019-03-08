@@ -7,7 +7,7 @@ import Markov from 'markov-strings'
 import SelamatPagi from './NichijouDict.js'
 
 // "If not in production, load dotenv"
-const production = /production/i.test(typeof process.env.NODE_ENV === 'string' ? process.env.NODE_ENV || '')
+const production = /production/i.test(typeof process.env.NODE_ENV === 'string' ? process.env.NODE_ENV : '')
 if (!production) {
     require('dotenv').config()
 }

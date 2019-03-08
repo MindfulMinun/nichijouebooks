@@ -22,7 +22,7 @@ var LikeLove = [
 // LL2:
 "Hey. You want to run?",
 // LL5:
-"I hope I get accepted to Tokisadame High School.", "I hope the person above gets accepted.", "I hope the person to the right gets accepted.", "I hope the person below gets accepted!! You can do it!",
+"I hope I get accepted to Tokisadame High School.", "I hope the person below gets accepted!! You can do it!",
 // LL10:
 "Cold attack!"];
 
@@ -35,13 +35,21 @@ var HelveticaStandard = [
 // HS?, E24
 "I promise I won’t tell anyone.", "If I ever tell, I’ll give you one million yen."];
 
-var Ep25 = [
+var Random = [
+// Part 71
+"My glasses... My glasses...",
+// Part 96
+"Boil me or fry me! Do whatever you want with me!",
+// Part 98
+"I think you’re a little too young for these!",
 // Part 106
-"If we show up late together, people will get the wrong idea."];
+"If we show up late together, people will get the wrong idea.",
+// Idk
+"Jan, ken, pon!"];
 
 data.push.apply(data, ShortThoughts);
 data.push.apply(data, LikeLove);
 data.push.apply(data, HelveticaStandard);
-data.push.apply(data, Ep25);
+data.push.apply(data, Random);
 
 exports.default = data;

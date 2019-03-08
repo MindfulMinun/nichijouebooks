@@ -55,7 +55,7 @@ const HelveticaStandard = [
 
 const Random = [
     // Part 71
-    "My glasses... My glasses..."
+    "My glasses... My glasses...",
     // Part 96
     "Boil me or fry me! Do whatever you want with me!",
     // Part 98
