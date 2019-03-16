@@ -10,7 +10,7 @@ var data = [];
 
 var ShortThoughts = [
 // Include all of SS, except SS2. They're short and sweet.
-"I wish to go to New Orleans.",
+"I wish to go to New Orleans.", // Ep3
 // Omit SS2, too long.
 "I drew this while listening to jazz.", "After a bath, I drink a glass of milk and pretend to be drunk.", "I want to use some “pretty sharp” quotation marks.", "Why do I cough just before the movie starts, at the movie theater?", "I respond to praise. But I never receive any.", //
 "If you search for it, you’ll find everything.", //
@@ -29,13 +29,21 @@ var LikeLove = [
 // TODO: Finish gathering short quotes from HS.
 var HelveticaStandard = [
 // HS2
-"I don’t suppose I could borrow some money.", "Don’t get cocky over a few favors.",
+"I don’t suppose I could borrow some money?", "Don’t get cocky over a few favors.",
 // HS10
 "This coffee isn’t very coffee coffee!", "It’s not coffee coffee!",
 // HS?, E24
 "I promise I won’t tell anyone.", "If I ever tell, I’ll give you one million yen."];
 
+// Put random quotes in order of the part in which they appear.
 var Random = [
+// Part 9
+"Selamat pagi!",
+// Part 13
+"Are you ready for the real battle?",
+// Sasahara 1, Ep4 @ ~ 2:45 / 3:42
+"Tell the chef... it was delicious!", "Our everyday lives may, in fact, be a series of miracles.",
+// ---
 // Part 71
 "My glasses... My glasses...",
 // Part 96

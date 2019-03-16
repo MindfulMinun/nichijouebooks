@@ -6,11 +6,8 @@ import Twit from 'twit'
 import Markov from 'markov-strings'
 import SelamatPagi from './NichijouDict.js'
 
-// "If not in production, load dotenv"
-const production = /production/i.test(typeof process.env.NODE_ENV === 'string' ? process.env.NODE_ENV : '')
-if (!production) {
-    require('dotenv').config()
-}
+const production = /production/i.test(process.env.NODE_ENV || '')
+require('dotenv').config()
 
 // Crow: The Twit client instance
 // Reference to the talking crow in Nichijou E17
@@ -31,8 +28,8 @@ const NanoOptions = {
     maxTries: 100,
     filter: (result) => {
         return [
-            1 < result.refs.length,
-            20 < result.score
+            // 1 < result.refs.length,
+            10 < result.score
         ].every(v => v)
     }
 }
@@ -49,4 +46,6 @@ if (production) {
             console.log('Something happened, couldn’t post tweet.')
             console.log(err)
         })
+} else {
+    console.log(phrase)
 }

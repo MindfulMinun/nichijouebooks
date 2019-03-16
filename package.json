@@ -6,23 +6,24 @@
   "repository": "https://github.com/MindfulMinun/nichijouebooks",
   "author": "MindfulMinun <importantmails4bc@gmail.com>",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "engines": {
     "node": "8.11.1"
   },
   "scripts": {
     "build": "babel src -d dist",
-    "watch": "nodemon --watch src --exec 'babel src -d dist'",
-    "start": "node dist/main.js"
+    "watch": "nodemon --watch src --exec 'yarn build'",
+    "start": "node dist/main.js",
+    "test": "yarn build && yarn start"
   },
   "dependencies": {
     "markov-strings": "^2.0.2",
+    "dotenv": "^6.2.0",
     "twit": "^2.2.11"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "dotenv": "^6.2.0",
     "nodemon": "^1.18.9"
   }
 }

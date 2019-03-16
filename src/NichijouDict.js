@@ -5,7 +5,7 @@ const data = []
 
 const ShortThoughts = [
     // Include all of SS, except SS2. They're short and sweet.
-    "I wish to go to New Orleans.",
+    "I wish to go to New Orleans.", // Ep3
     // Omit SS2, too long.
     "I drew this while listening to jazz.",
     "After a bath, I drink a glass of milk and pretend to be drunk.",
@@ -43,7 +43,7 @@ const LikeLove = [
 // TODO: Finish gathering short quotes from HS.
 const HelveticaStandard = [
     // HS2
-    "I don’t suppose I could borrow some money.",
+    "I don’t suppose I could borrow some money?",
     "Don’t get cocky over a few favors.",
     // HS10
     "This coffee isn’t very coffee coffee!",
@@ -53,7 +53,16 @@ const HelveticaStandard = [
     "If I ever tell, I’ll give you one million yen."
 ]
 
+// Put random quotes in order of the part in which they appear.
 const Random = [
+    // Part 9
+    "Selamat pagi!",
+    // Part 13
+    "Are you ready for the real battle?",
+    // Sasahara 1, Ep4 @ ~ 2:45 / 3:42
+    "Tell the chef... it was delicious!",
+    "Our everyday lives may, in fact, be a series of miracles.",
+    // ---
     // Part 71
     "My glasses... My glasses...",
     // Part 96

@@ -14,15 +14,12 @@ var _NichijouDict2 = _interopRequireDefault(_NichijouDict);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// "If not in production, load dotenv"
-var production = /production/i.test(typeof process.env.NODE_ENV === 'string' ? process.env.NODE_ENV : ''); // Twit: the library for connecting to Twitter
+var production = /production/i.test(process.env.NODE_ENV || ''); // Twit: the library for connecting to Twitter
 // Markov: the Markov chain text generator
 // SelamatPagi: the dictionary with all the Nichijou quotes
 // that Markov will generate from.
 
-if (!production) {
-    require('dotenv').config();
-}
+require('dotenv').config();
 
 // Crow: The Twit client instance
 // Reference to the talking crow in Nichijou E17
@@ -42,7 +39,9 @@ Nano.buildCorpus();
 var NanoOptions = {
     maxTries: 100,
     filter: function filter(result) {
-        return [1 < result.refs.length, 20 < result.score].every(function (v) {
+        return [
+        // 1 < result.refs.length,
+        10 < result.score].every(function (v) {
             return v;
         });
     }
@@ -57,4 +56,6 @@ if (production) {
         console.log('Something happened, couldn’t post tweet.');
         console.log(err);
     });
+} else {
+    console.log(phrase);
 }
