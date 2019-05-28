@@ -11,10 +11,10 @@ const ShortThoughts = [
     "After a bath, I drink a glass of milk and pretend to be drunk.",
     "I want to use some “pretty sharp” quotation marks.",
     "Why do I cough just before the movie starts, at the movie theater?",
-    "I respond to praise. But I never receive any.", //
-    "If you search for it, you’ll find everything.", //
+    "I respond to praise. But I never receive any.",
+    "If you search for it, you’ll find everything.",
     "Bubbly, carbonated drinks make you feel awake.",
-    "A month passes quickly, but Sunday seems so far away.",
+    "A month passes quickly, but Sunday seems so far away.", // Ep13 @ 18:20
     "When asked, “What are you doing?”, she replied, “Spinning.”",
     "I’ll use all my reserves.",
     "When I can, I like to pretend I know everyone.",
@@ -22,7 +22,7 @@ const ShortThoughts = [
     "There is no “that is fine”. There is no “this is fine”. That is fine.",
     "I break when no one sees me.",
     "There wasn’t any point.",
-    "Even when wasting time, talent is still talent.", //
+    "Even when wasting time, talent is still talent.",
     "In the end, everyone hopes for a happy ending.",
     "It is a big deal.",
     "Now that I think about it, I haven’t been shy this year.",
@@ -45,6 +45,8 @@ const HelveticaStandard = [
     // HS2
     "I don’t suppose I could borrow some money?",
     "Don’t get cocky over a few favors.",
+    // HS?, E13
+    "I thought I was getting on the bus, but I was getting on the wave of time.",
     // HS10
     "This coffee isn’t very coffee coffee!",
     "It’s not coffee coffee!",
@@ -75,9 +77,29 @@ const Random = [
     "Jan, ken, pon!",
 ]
 
+// Episode 13
+const Ep13 = [
+    // Ep13 @ 3:55 ~ 6:48
+    "I thought I’d perform that magic trick I told you about...",
+    "How sick are you?",
+    "Rest in peace.",
+    // 80-Point Mongolian: Ep13 @ 9:15 ~
+    "Do you want me to tell you how I got 80 points?",
+    "It takes tremendous effort... and heart.",
+    // Reality: Ep13 @ 10:40 ~ 11:25
+    "I’ll play with my grandson all day and forget reality’s unpleasentness.",
+    "This is worse than reality...",
+    // Part 55: Ep13 @ 12:09 ~ 18:00
+    "Kids are so hopeless.",
+    "Sakamoto, you’re small and weak, so you don’t have to.",
+    // "Don’t you think the girl wants to go to school?",
+    "It’s scary to go alone, but it’s okay if we’re together."
+]
+
 data.push(...ShortThoughts)
 data.push(...LikeLove)
 data.push(...HelveticaStandard)
 data.push(...Random)
+data.push(...Ep13)
 
 export default data
