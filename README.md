@@ -3,7 +3,7 @@
     <tr>
         <td>
            <a href="https://twitter.com/NichijouEbooks">
-               <img src="https://puu.sh/D0FPJ/b290ab239d.png" alt="NichijouEbooks">
+               <img src="https://raw.githubusercontent.com/MindfulMinun/nichijouebooks/master/peek.png" alt="NichijouEbooks">
            </a>
         </td>
         <td>
